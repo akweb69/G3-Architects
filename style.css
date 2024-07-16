@@ -67,7 +67,7 @@ nav ul li a{
 .responsive{
     width: 96%;
     height: 55px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -382,4 +382,253 @@ nav ul li a{
     margin-top: 260px;
     flex-direction: column;
 
+}
+
+/* media query css start from here */
+
+@media screen and (max-width:1164px) {
+    .exp-img p {
+        left: -83px;
+        bottom: 22px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .exp-img p {
+        left: -50px;
+        bottom: 70px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .exp-img p {
+        left: 69px;
+        bottom: 0;
+    }
+    .feature-container {
+        width: 85%;
+        height: 500px;
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+    .experience-container {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 70px;
+        /* height: 750px; */
+        height: 100%;
+        /* border: 1px solid red; */
+        margin-bottom: 170px;
+    }
+    .exp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .exp-img {
+        width: 85%;
+        position: relative;
+        margin-top: 50px;
+    }
+    .exp-details {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 70px;
+        /* border: 1px solid green; */
+        flex-direction: row;
+    }
+    .exp-img p {
+        left: 226px;
+        bottom: -58px;
+    }
+    .feature-gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .feature-container{
+        flex-direction: column-reverse;
+        height: 110%;
+    }
+    .feature-description {
+        width: 100%;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+
+}
+@media screen and (max-width: 778px) {
+    .nav-dextop{
+        display: none;
+    }
+    .responsive{
+        display: flex;
+    }
+    .exp-details {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 70px;
+        /* border: 1px solid green; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .exp-img p {
+        display: none;
+        left: 226px;
+        bottom: -58px;
+    }
+    .sf-card-container{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 20px;
+    }
+    .sf-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+    .brand-title {
+        text-align: center;
+        font-size: 2.8rem;
+        color: var(--dark-1);
+        font-family: var(--work-fonts);
+        font-weight: 700;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .feature-container {
+        width: 99%;
+        height: 100%;
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        gap: 60px;
+        flex-direction: column-reverse;
+    }
+    .feature-description {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+    .feature-gallery {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .sponsor-company {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .btn-hero {
+        text-align: center;
+        padding-top: 55px;
+    }
+    .brand-descrip {
+        color: var(--dark-3);
+        font-weight: 400;
+        font-size: 0.7rem;
+        font-family: var(--work-fonts);
+        text-align: center;
+        margin-top: 29px;
+    }
+    .exp-title h2 {
+        color: rgb(19, 19, 19);
+        font-family: Work Sans;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .exp-title p {
+        max-width: 100%;
+        color: rgb(114, 114, 114);
+        font-family: Work Sans;
+        font-size: 11.5px;
+        font-weight: 400;
+        margin-top: 16px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .brand-descrip {
+        color: var(--dark-3);
+        font-weight: 400;
+        font-size: 0.7rem;
+        font-family: var(--work-fonts);
+        text-align: center;
+        margin-top: 29px;
+        padding: 0px 34px;
+    }
+    .brand-title {
+        text-align: center;
+        font-size: 2.8rem;
+        color: var(--dark-1);
+        font-family: var(--work-fonts);
+        font-weight: 700;
+        margin-top: 100px;
+        padding: 0px 3px;
+    }
+    .fg-details {
+        font-family: var(--work-fonts);
+        color: var(--dark-3);
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-top: 15px;
+        margin-bottom: 44px;
+    }
+    .some-fact h3 {
+        color: rgb(19, 19, 19);
+        font-family: Work Sans;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .some-fact .sf-description p {
+        color: rgb(114, 114, 114);
+        font-family: Work Sans;
+        font-size: 12px;
+        font-weight: 400;
+        max-width: 400px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .sf-card-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+    .exp-card {
+        width: 300px;
+        height: 133px;
+        border-radius: 8px;
+        padding: 22px;
+        box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.06);
+    }
+}
+@media screen and (max-width: 300px){
+    .exp-card {
+        width: 250px;
+        height: 141px;
+        border-radius: 8px;
+        padding: 22px;
+        box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.06);
+    }
 }
